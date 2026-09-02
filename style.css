@@ -8,6 +8,7 @@
 body {
     background-color: #f8f9fa;
     color: #333;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -23,22 +24,24 @@ body {
     padding: 15px 50px;
     width: 100%;
     background-color: #180e249d;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .logo img {
-    height: 60px;
+    height: 50px;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .menu a {
     text-decoration: none;
     color: #b5b0cb;
-    font-size: 20px;
+    font-size: 17px;
     transition: color 0.3s;
 }
 
@@ -49,15 +52,18 @@ body {
 .btn-download {
     background: linear-gradient(135deg, #7c3aed, #3b82f6);
     color: #fff;
-    padding: 10px 22px;
+    padding: 8px 16px;
     border-radius: 6px;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .hero-main {
     display: flex;
     align-items: stretch;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -65,13 +71,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 80px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 80px;
 }
 
 .hero-text h1 {
-    font-size: 76px;
+    font-size: 60px;
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.1;
@@ -80,7 +84,7 @@ body {
 
 .hero-text p {
     color: #b0aec4;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 35px;
     line-height: 1.6;
     max-width: 400px;
@@ -89,6 +93,7 @@ body {
 .hero-buttons {
     display: flex;
     gap: 15px;
+    flex-wrap: nowrap; 
 }
 
 .btn-pink {
@@ -98,8 +103,9 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     transition: background 0.3s;
+    white-space: nowrap;
 }
 
 .btn-pink:hover {
@@ -114,8 +120,9 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     transition: border-color 0.3s;
+    white-space: nowrap;
 }
 
 .btn-outline:hover {
@@ -130,11 +137,13 @@ body {
     background-image: url('imagenes/hojasFondo.jpg');
     background-size: cover;
     background-position: center;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .phone-mockup {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     filter: drop-shadow(0 15px 25px rgba(0,0,0,0.4));
 }
 
@@ -163,6 +172,7 @@ body {
 .features-img img {
     max-width: 450px;
     width: 100%;
+    height: auto;
 }
 
 .features-text {
@@ -243,6 +253,7 @@ body {
     background-color: #fff;
     color: #333;
     width: 320px;
+    max-width: 100%;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -393,6 +404,8 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 23px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .author {
@@ -415,99 +428,37 @@ body {
     color: #ff0000;
 }
 
-@media (max-width: 1279px) {
-    .hero-content {
-        padding-left: 50px;
-    }
+@media (max-width: 480px) {
     .nav-container {
-        padding: 15px 40px;
+        padding: 12px 15px;
     }
-}
-
-@media (max-width: 920px) {
-    .hero-main {
-        flex-direction: column;
-    }
-    .hero-content {
-        padding: 40px 30px;
-        align-items: center;
-        text-align: center;
-    }
-    .hero-text p {
-        max-width: 100%;
-    }
-    .hero-buttons {
-        justify-content: center;
-    }
-    .features-container {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .nav-container {
-        padding: 15px 20px;
-    }
-    .footer {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
+    .logo img {
+        height: 40px;
     }
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
     .menu a {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .btn-download {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .hero-content {
+        padding: 30px 20px;
     }
     .hero-text h1 {
-        font-size: 48px;
-    }
-    .hero-text p {
-        font-size: 18px;
-    }
-    .btn-pink, .btn-outline {
-        font-size: 18px;
-        padding: 10px 18px;
-    }
-    .section-title-pink {
-        font-size: 28px;
-        margin-bottom: 40px;
-    }
-    .pricing {
-        padding: 50px 15px;
-    }
-    .pricing h2 {
-        font-size: 30px;
-    }
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
     .hero-text p {
         font-size: 16px;
     }
     .hero-buttons {
-        flex-direction: column;
-        width: 100%;
+        gap: 10px;
     }
     .btn-pink, .btn-outline {
-        width: 100%;
-        text-align: center;
-    }
-    .card {
-        width: 100%;
+        padding: 10px 14px;
+        font-size: 15px;
     }
 }
