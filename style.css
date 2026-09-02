@@ -48,7 +48,7 @@ body {
 
 .btn-download {
     background: linear-gradient(135deg, #7c3aed, #3b82f6);
-    color: #fff ;
+    color: #fff;
     padding: 10px 22px;
     border-radius: 6px;
     font-weight: 600;
@@ -269,6 +269,7 @@ body {
     font-size: 18px;
     margin-bottom: 8px;
 }
+
 .plan-name2 {
     display: block;
     color: #001849;
@@ -295,6 +296,7 @@ body {
     text-align: left;
     line-height: 1.2;
 }
+
 .card-features {
     list-style: none;
     padding: 20px;
@@ -316,18 +318,20 @@ body {
 .card:nth-child(1) .card-features li i.fa-star {
     color: #e63983; 
 }
+
 .card:nth-child(2) .card-features li i.fa-star {
     color: #001849; 
 }
 
 .card:nth-child(3) .card-features li i.fa-star {
-    color: #001849 ; 
+    color: #001849; 
 }
+
 .card:nth-child(1) .card-features li i.fa-star,
-.card:nth-child(1) .card-features li i.fa-check,
-.card:nth-child(1) .card-features  {
-    color: #e63983 ;
+.card:nth-child(1) .card-features li i.fa-check {
+    color: #e63983;
 }
+
 .card-features li i.fa-check {
     color: #001849;
 }
@@ -393,7 +397,7 @@ body {
 
 .author {
     color: #e63983;
-    font-weight: 600p;
+    font-weight: 600;
 }
 
 .social-icons {
@@ -410,19 +414,15 @@ body {
 .social-icons a:hover {
     color: #ff0000;
 }
+
 @media (max-width: 1279px) {
-   
 }
 
 @media (max-width: 920px) {
-   
 }
 
 @media (max-width: 768px) {
-
 }
-    
 
 @media (max-width: 480px) {
-   
 }
